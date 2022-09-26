@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"python.analysis.typeCheckingMode": "strict",
+		"window.zoomLevel": -1,
+		"editor.formatOnSaveMode": "file",
+		"editor.formatOnSave": true,
+		"editor.codeActionOnSave": {
+			"source.organizeImports": true,
+		},
+		"python.linting.pylintEnabled": true,
+		"python.formatting.provider": "black",
+		"vim.smartRelativeLine": true,
+		"workbench.colorCustomizations": {
+			"titleBar.activeBackground": "#ffbb00bc",
+		},
+	},
+}

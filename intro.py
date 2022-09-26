@@ -7,14 +7,16 @@ from matplotlib import animation
 from stable_baselines3 import PPO
 from pyvirtualdisplay import Display
 
-stamp = datetime.now().strftime('%Y%m%d-%H%M%S')
-
 # user defined variables
-task = 'train'  # train, execute
+task = 'execute'  # train, execute
 algorithm = 'PPO'  # PPO
+if task == 'execute':
+    stamp = '20220925-123523'
+elif task == 'train':
+    stamp = datetime.now().strftime('%Y%m%d-%H%M%S')
 cp_dir = f'logs/checkpoints/{algorithm}/{stamp}/'
 # cp_dir = f'logs/checkpoints/{algorithm}/20220918-221234/'
-model_file = f'90000.zip'
+model_file = f'90000'
 tboard_dir = 'logs/tensorboard'
 # render_dir = f'{models_dir}{model_file[:-4]}_render/'
 # render_file = f'{model_file[:-4]}.gif'
@@ -24,7 +26,9 @@ episodes = 10
 # virtual_display = Display(visible=0, size=(1400, 900))
 # virtual_display.start()
 
-env = gym.make('LunarLander-v2')  # continuous: LunarLanderContinuous-v2
+# env = gym.make('LunarLander-v2')  # continuous: LunarLanderContinuous-v2
+env = 
+
 # env = wrappers.Monitor(env, render_dir)
 env.reset()
 
@@ -44,7 +48,6 @@ if task == 'train':
         model.save(f'{cp_dir}/{timesteps*i}')
 
 if task == 'execute':
-
     model = PPO.load(cp_dir+model_file, env=env)
     for ep in range(episodes):
         obs = env.reset()
