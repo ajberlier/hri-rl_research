@@ -1,0 +1,6 @@
+[submodule "envs/cliport"]
+	path = envs/cliport
+	url = git@github.com:cliport/cliport.git
+[submodule "envs/ravens"]
+	path = envs/ravens
+	url = git@github.com:google-research/ravens.git
