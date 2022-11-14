@@ -1,3 +1,0 @@
-[submodule "envs/ravens"]
-	path = envs/ravens
-	url = git@github.com:google-research/ravens.git
