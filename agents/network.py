@@ -7,6 +7,8 @@ import torch.nn.functional as F
 
 
 class FeedForwardNN(nn.Module):
+    ''' General Feed Forward Neural Network for use by any agent '''
+    # TODO: make thius configurable with a config file
     def __init__(self, in_dim, out_dim):
         super(FeedForwardNN, self).__init__()
         # TODO: make this configurable with a config file

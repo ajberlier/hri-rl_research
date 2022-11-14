@@ -1,0 +1,10 @@
+# environment
+env:
+  path: '/home/ajberlier/Dev/hri-rl_research/envs/'
+  assets: '/home/ajberlier/Dev/hri-rl_research/envs/cliport/environments/assets/'
+  task: 'stack_block_pyramid'
+
+
+# agent
+
+# unit-testing
