@@ -8,3 +8,5 @@ env:
 # agent
 
 # unit-testing
+test: True
+  
